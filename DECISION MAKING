@@ -1,0 +1,214 @@
+#Greatest of two numbers
+a=int(input())
+b=int(input())
+if a>b:
+    print(a,"is greater than",b)
+elif a<b:
+    print(a,"is less than",b)
+else:
+    print(a,"is equal to",b)
+
+
+#Vowel Or Consonants
+p=input()
+if p in "aeiouAEIOU":
+    print("Vowel")
+elif p in "bcdfghjklmnpqrstvwxtyBCDFGHJKLMNPQRSTVWXYZ":
+    print("Consonant")
+else:
+    print("Not an alphabet")
+   
+   
+#Grading System
+marks=int(input())
+if marks==100:
+    print("S")
+elif marks >=90 and marks<100:
+    print("A")
+elif marks >=80 and marks<90:
+    print("B")
+elif marks >=70 and marks<80:
+    print("C")
+elif marks >=60 and marks<70:
+    print("D")
+elif marks >=50 and marks<60:
+    print("E")
+elif marks<50:
+    print("F")
+else:
+    print("Invalid input")
+    
+    
+#Profit or Loss
+cp=float(input("Enter the price of a dozen mangoes:"))
+sp=float(input("Enter the price at which 1 mango is being sold:"))
+x=sp*12
+z=cp-x
+y=x-cp
+if cp>x:
+    print("Loss: Rs.","%.2f"%z)
+elif cp<x:
+    print("Profit: Rs.","%.2f"%y)
+elif cp==x:
+   print("No profit Nor loss")    
+   
+
+#Fee Collection
+print("Enter the student type")
+s=input()
+if s=="MSDS":
+    print("Enter tuition fee")
+    t=float(input())
+    print("Enter bus fee ")
+    b=float(input())
+    x=t+b
+    print("The fees to be paid by the student is Rs.","%.2f"%x)
+elif s=="MSH":
+    print("Enter tuition fee")
+    t=float(input())
+    print("Enter hostel fee")
+    h=float(input())
+    y=t+h
+    print("The fees to be paid by the student is Rs.","%.2f"%y)
+elif s=="MGSDS":
+    print("Enter tuition fee")
+    t=float(input())
+    print("Enter bus fee")
+    b=float(input())
+    z=(150/100)*t+b
+    print("The fees to be paid by the student is Rs.","%.2f"%z)
+elif s=="MGSH":
+    print("Enter tuition fee")
+    t=float(input())
+    print("Enter hostel fee")
+    h=float(input())
+    k=(150/100)*t+h
+    print("The fees to be paid by the student is Rs.","%.2f"%k)    
+    
+    
+#Y2K Problem Detector
+print("Enter year of birth")
+b=int(input())
+print("Enter current year")
+c=int(input())
+if c<b:
+    x=100-b
+    y=x+c
+    print("Your age is",y)
+else:
+    print("Your age is",c-b)
+    
+
+#Lab Allocation
+print("Enter x")
+L1=int(input())
+print("Enter y")
+L2=int(input())
+print("Enter z")
+L3=int(input())
+if L1<L2 and L1<L3:
+    print("L1 has the minimal seating capacity")
+elif L2<L1 and L2<L3:
+    print("L2 has the minimal seating capacity")
+else:
+    print("L3 has the minimal seating capacity")
+    
+    
+#Gardening I
+a=int(input())
+b=int(input())
+c=int(input())
+if c%b==0:
+    print("Yes")
+elif c%a==0:
+    print("Yes")
+elif c%b==1:
+    print("Yes")
+else:
+    print("No")
+
+
+#Hotel Tariff Calculator
+a=input()
+b=float(input())
+c=int(input())
+p=b*c
+q=(20/100)*p
+if a in "456BC":
+      print("Hotel Tariff: Rs.""%.2f"%(p+q))
+elif a in "123789A":
+      print("Hotel Tariff: Rs.""%.2f"%p)
+else:
+    print("Invalid Input")
+
+
+#RGY Lights
+s=float(input())
+d=float(input())
+t=float(input())
+if s<=60.00:
+    print("no")
+else:
+    print("yes")
+
+#Budget
+A=int(input())
+B=int(input())
+C=int(input())
+D=int(input())
+E=int(input())
+cost=(A*350.34)+(B*230.90)+(C*190.55)+(D*125.30)+(E*180.90)
+if cost<15000:
+    print("yes")
+else:
+    print("no")
+    
+    
+#Sece Dining
+S=input()
+R=int(input())
+if S=="front":
+  if R==1:
+      print("Left Handed")
+  elif R==2:
+      print("Right Handed")
+  else:
+      print("Invalid Input")
+elif S=="rear":
+    if R==1:
+        print("Right Handed")
+    elif R==2:
+        print("Left Handed")
+    else:
+        print("Invalid Input")
+
+
+#Intersection of a Circle
+x1=int(input())
+y1=int(input())
+r1=int(input())
+x2=int(input())
+y2=int(input())
+r2=int(input())
+x=x1-x2
+y=y1-y2
+cc=(x**2+y**2)**0.5
+if cc==r1+r2:
+    print("The circles are tangential")
+elif cc<r1+r2:
+    print("The circles overlap")
+else:
+    print("The circles do not overlap")
+    
+    
+#Microwave Oven
+a=int(input("Enter the number of items\n"))
+b=float(input("Enter the single item heating time\n"))
+if a==2:
+    print("The recommended heating time is %.2f"%(b+0.5*b))
+elif a==3: 
+    print("The recommended heating time is %.2f"%(2*b))
+else:
+    print("Number of items is more")
+    
+    
